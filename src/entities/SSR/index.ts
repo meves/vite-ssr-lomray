@@ -1,0 +1,1 @@
+export { getPing } from './api'

@@ -1,0 +1,18 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@shared/ui": ["./src/shared/ui/index"],
+      "@shared/api/*": ["./src/shared/api/*"],
+      "@shared/contexts/*": ["./src/shared/contexts/*"],
+      "@entities/*": ["./src/entities/*"]
+    }
+  }
+}
