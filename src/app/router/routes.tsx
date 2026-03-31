@@ -6,13 +6,14 @@ import { ViewerSSRPage } from '@pages/ViewerSSRPage'
 import { ViewerCSRPage } from '@pages/ViewerCSRPage'
 
 import { getViewer } from '@entities/Viewer'
-import { getPing } from '@entities/SSR'
+import { getPing } from '@entities/Ping'
 import { ErrorComponent } from '@shared/ui'
 
 const routes: TRouteObject[] = [
   {
     path: '/',
-    lazy: () => import('@pages/HomePage/ui/HomePage')
+    lazy: () => import('@pages/HomePage/ui/HomePage'),
+    errorElement: <ErrorComponent/>
   },
   {
     path: '/feed',

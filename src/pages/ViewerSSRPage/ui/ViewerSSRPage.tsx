@@ -6,11 +6,11 @@ export default function ViewerSSRPage() {
   const data = useLoaderData()
 
   if (typeof window === 'undefined') {
-    console.log('Данные LessonViewerPage рендерятся на сервере');
-    console.log(data);
+    console.log('Данные ViewerSSRPage рендерятся на сервере');
+    console.log('data: ', data);
   } else {
-    console.log('Данные LessonViewerPage рендерятся на клиенте');
-    console.log(data);
+    console.log('Данные ViewerSSRPage рендерятся на клиенте');
+    console.log('data: ', data);
   }
 
   return (

@@ -2,6 +2,7 @@ import { api } from "@shared/api/instance"
 
 export async function getViewer() {
   const _serverRenderStart = Date.now()
+  
   const response = await api.get('timetable/lessons/viewer', {
     params: {
       end_date: '2026-03-29',
