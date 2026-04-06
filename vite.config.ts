@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
+import { defineConfig, type UserConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import SsrBoost from '@lomray/vite-ssr-boost/plugin'
 import * as path from 'node:path'
 
 // https://vite.dev/config/
-export default defineConfig(({command, mode}) => ({
+export default defineConfig((): UserConfig => ({
   root: __dirname,
   publicDir: 'public',
   resolve: {
